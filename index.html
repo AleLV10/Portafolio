@@ -101,7 +101,7 @@
           <a class="btn btn-icon rounded-circle" data-bs-toggle="collapse" href="#c4" aria-controls="c4">
             <i class="bi bi-instagram"></i>
           </a>
-          <a class="btn btn-icon rounded-circle" data-bs-toggle="collapse" href="#c4" aria-controls="c5">
+          <a class="btn btn-icon rounded-circle" data-bs-toggle="collapse" href="#c5" aria-controls="c8">
             <i class="bi bi-linkedin"></i>
           </a>
         </div>
@@ -735,7 +735,7 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 proyects">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 proyects">
           
           <div class="col">
             <!-- Proyecto 1 -->
@@ -757,10 +757,10 @@
               role="button"
               data-bs-toggle="modal"
               data-bs-target="#proy2">
+              <h5 class="card-title"><Strong>CatCode</Strong></h5>
               <img src="..." class="card-img-top" alt="Proyecto2">
               <div class="card-body">
-                <h5 class="card-title"><Strong>Title</Strong></h5>
-                <p>Info Proy 1</p>
+                <p>Entorno de desarrollo para escribir, analizar y ejecutar código en un lenguaje propio, con visualización paso a paso.</p>
               </div>
             </div>
           </div>
@@ -837,7 +837,7 @@
             
           
         </div>
-        <!-- MODAL 1: EXPOCIENCIAS -->
+        <!-- MODAL 1 -->
         <div class="modal fade" id="proy1" tabindex="-1" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-dark">
@@ -924,6 +924,15 @@
                     equivalente en <strong>C</strong>, soportando variables, operaciones, condicionales y bucles.
                   </p>
                 </div>
+                <div class="project-links mt-4 d-flex gap-2 flex-wrap">
+                  <a href="https://github.com/AleLV10/Analizador-con-Gramatica-LR" target="_blank" class="btn btn-outline-light">
+                    Ver en GitHub
+                  </a>
+
+                  <a href="assets/Docs/COMPLILADOR LR.pdf" target="_blank" class="btn btn-light">
+                    Ver documentación
+                  </a>
+                </div>
 
               </div>
             </div>
@@ -934,7 +943,7 @@
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-dark">
               <div class="modal-header border-0">
-                <h5 class="modal-title text-white">Proyecto Nombre</h5>
+                <h5 class="modal-title text-white">CatCode</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body p-0">
@@ -966,58 +975,52 @@
                   </button>
                 </div>
                 <div class="project-description">
-                  <h3>Compilador / Lenguaje Personalizado → Generación de Código en C</h3>
-
                   <p>
-                    Aplicación tipo <strong>compilador</strong> que permite escribir programas usando un
-                    <strong>lenguaje personalizado</strong>, definido mediante una gramática formal.
-                    El sistema valida el código por etapas (léxico, sintáctico y semántico) y genera como salida
-                    un archivo con <strong>código equivalente en C</strong>, respetando la estructura y reglas del lenguaje.
+                    <strong>CatCode</strong> es un entorno de desarrollo diseñado para crear, analizar y ejecutar programas escritos en un
+                    <strong>lenguaje personalizado</strong>. Permite verificar si el código cumple con la sintaxis establecida,
+                    mostrando de forma clara el comportamiento del programa mediante una interfaz organizada e intuitiva.
                   </p>
 
-                  <h4>Funcionalidades principales</h4>
-                  <ul>
-                    <li>
-                      <strong>Declaración y asignación de variables:</strong>
-                      permite declarar variables al inicio del programa con tipos <code>int</code>, <code>float</code> y <code>char</code>.
-                      Se admite declaración simple o con asignación inicial.
-                    </li>
-                    <li>
-                      <strong>Operaciones aritméticas:</strong>
-                      soporte de expresiones con <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> y uso de paréntesis <code>()</code>.
-                    </li>
-                    <li>
-                      <strong>Condicionales (if / else):</strong>
-                      estructuras <code>if (condición) { ... }</code> y <code>else { ... }</code> con operadores
-                      <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>==</code>, <code>!=</code>.
-                    </li>
-                    <li>
-                      <strong>Bucles (for):</strong>
-                      estructura <code>for (inicialización; condición; actualización) { ... }</code>,
-                      incluyendo incrementos y decrementos como <code>id++</code>, <code>id--</code>, <code>++id</code>, <code>--id</code>.
-                    </li>
-                    <li>
-                      <strong>Estructuras anidadas:</strong>
-                      soporte de anidación de condicionales y bucles (por ejemplo, <code>if</code> dentro de <code>if</code>,
-                      <code>for</code> dentro de <code>for</code>, etc.).
-                    </li>
-                  </ul>
-
-                  <h4>Proceso general</h4>
-                  <ul>
-                    <li><strong>Análisis léxico:</strong> identificación de tokens (identificadores, números, tipos, operadores y símbolos).</li>
-                    <li><strong>Análisis sintáctico:</strong> validación de la estructura del programa según la gramática definida.</li>
-                    <li><strong>Validación semántica:</strong> verificación de coherencia (uso correcto de variables y tipos).</li>
-                    <li><strong>Generación de código:</strong> traducción del programa a un archivo final en <strong>C</strong>.</li>
-                  </ul>
-
-                  <h4>Resultado</h4>
                   <p>
-                    Herramienta capaz de recibir código en un lenguaje propio, validarlo y generar como salida un programa
-                    equivalente en <strong>C</strong>, soportando variables, operaciones, condicionales y bucles.
+                    El sistema realiza validaciones por etapas, incluyendo <strong>análisis léxico</strong>, <strong>sintáctico</strong> y
+                    <strong>semántico</strong>, lo que ayuda a detectar errores y comprender la estructura del código. Además, incorpora
+                    una ejecución guiada que permite visualizar información clave durante el proceso, como el archivo activo,
+                    la salida en consola, los componentes identificados y la pila de ejecución.
+                  </p>
+
+                  <h4>Características principales</h4>
+                  <ul>
+                    <li>
+                      <strong>Creación y edición de archivos .mal:</strong>
+                      permite trabajar con programas en el formato del lenguaje, organizando el código de manera práctica.
+                    </li>
+                    <li>
+                      <strong>Análisis léxico, sintáctico y semántico:</strong>
+                      verificación completa del programa para validar estructura, tokens y coherencia.
+                    </li>
+                    <li>
+                      <strong>Ejecución y visualización paso a paso:</strong>
+                      seguimiento del comportamiento del código para comprender su funcionamiento.
+                    </li>
+                    <li>
+                      <strong>Interfaz por pestañas:</strong>
+                      navegación cómoda entre <em>Consola</em>, <em>Componentes</em>, <em>Pila</em> y el archivo activo.
+                    </li>
+                  </ul>
+
+                  <h4>Ejemplo de código</h4>
+                  <pre><code>program hola; <br>write("Hola mundo"); <br>endp</code></pre>
+
+                  <p>
+                    <strong>CatCode</strong> facilita el aprendizaje y la comprensión de cómo se analiza y ejecuta un lenguaje,
+                    integrando validación, ejecución y visualización dentro de una misma herramienta.
                   </p>
                 </div>
-
+                <div class="project-links mt-4 d-flex gap-2 flex-wrap">
+                  <a href="https://github.com/AleLV10/Analizador" target="_blank" class="btn btn-outline-light">
+                    Ver en GitHub
+                  </a>
+                </div>
               </div>
             </div>
           </div>
