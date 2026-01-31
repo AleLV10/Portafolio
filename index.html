@@ -1427,7 +1427,7 @@
           </div>
           <!-- Form -->
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" style="border-radius: 15px;">
+            <form action="https://formspree.io/f/mreknerr" method="POST" style="border-radius: 15px;">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -1450,16 +1450,16 @@
                   <textarea name="message" rows="10" id="message-field" class="form-control" required></textarea>
                 </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Cargando</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                <!-- Opcional: asunto bonito -->
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde alejandralopez.mx">
 
+                <div class="col-md-12 text-center">
                   <button type="submit">Enviar</button>
                 </div>
 
               </div>
             </form>
+
           </div><!-- End Contact Form -->
 
         </div>
