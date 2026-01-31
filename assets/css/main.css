@@ -1003,13 +1003,15 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  margin-left: 2.5rem ;
-  margin-right: 2.5rem ;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
+
 .contact .info-wrap {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  border-radius: 16px; /* ✅ extra: más elegante */
 }
 
 @media (max-width: 575px) {
@@ -1059,6 +1061,7 @@ section,
   height: 100%;
   padding: 30px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 16px; /* ✅ extra: más elegante */
 }
 
 @media (max-width: 575px) {
@@ -1067,41 +1070,56 @@ section,
   }
 }
 
+/* ✅ Inputs redondeados + borde suave */
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
   font-size: 14px;
-  padding: 10px 15px;
+  padding: 12px 16px; /* un poquito más cómodo */
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 14px; /* ✅ aquí lo redondeado */
   color: var(--default-color);
   background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  transition: 0.25s ease;
 }
 
+/* ✅ Focus rosa bonito */
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+  border-color: #b1093d;
+  box-shadow: 0 0 0 4px rgba(177, 9, 61, 0.12);
+  outline: none;
 }
 
+/* ✅ Placeholder rosa suave */
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: rgba(177, 9, 61, 0.55);
 }
 
+/* ✅ Textarea más bonita */
+.contact .php-email-form textarea {
+  resize: none;
+  border-radius: 16px;
+}
+
+/* Botón igual pero más acorde */
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #b1093d;
   border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
+  padding: 12px 30px;
+  transition: 0.3s ease;
   border-radius: 50px;
+  font-weight: 600;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+  background: color-mix(in srgb, #b1093d, transparent 15%);
+  transform: translateY(-1px);
 }
 
 /*--------------------------------------------------------------

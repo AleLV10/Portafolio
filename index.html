@@ -1431,23 +1431,23 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Tu nombre</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required>
+                  <input type="text" name="name" id="name-field" class="form-control custom-input"
+                    placeholder="Tu nombre" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Tu correo electrónico</label>
-                  <input type="email" name="email" id="email-field" class="form-control" required>
+                  <input type="email" name="email" id="email-field" class="form-control custom-input"
+                    placeholder="Tu correo electrónico" required>
                 </div>
 
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Título</label>
-                  <input type="text" name="subject" id="subject-field" class="form-control" required>
+                  <input type="text" name="subject" id="subject-field" class="form-control custom-input"
+                    placeholder="Título" required>
                 </div>
 
                 <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Mensaje</label>
-                  <textarea name="message" rows="10" id="message-field" class="form-control" required></textarea>
+                  <textarea name="message" rows="8" id="message-field" class="form-control custom-input custom-textarea"
+                    placeholder="Escribe un Mensaje" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -1455,11 +1455,12 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
 
-                  <button type="submit">Enviar</button>
+                  <button type="submit" class="custom-btn">Enviar</button>
                 </div>
 
               </div>
             </form>
+
           </div><!-- End Contact Form -->
 
         </div>
